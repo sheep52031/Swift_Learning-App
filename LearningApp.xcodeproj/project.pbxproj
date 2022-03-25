@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B213158C27EDC0A400F76890 /* LearningAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213158B27EDC0A400F76890 /* LearningAppApp.swift */; };
-		B213158E27EDC0A400F76890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213158D27EDC0A400F76890 /* ContentView.swift */; };
+		B213158C27EDC0A400F76890 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213158B27EDC0A400F76890 /* LearningApp.swift */; };
+		B213158E27EDC0A400F76890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213158D27EDC0A400F76890 /* HomeView.swift */; };
 		B213159027EDC0A500F76890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B213158F27EDC0A500F76890 /* Assets.xcassets */; };
 		B213159327EDC0A500F76890 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B213159227EDC0A500F76890 /* Preview Assets.xcassets */; };
+		B213159D27EDC34000F76890 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213159C27EDC34000F76890 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B213158827EDC0A400F76890 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B213158B27EDC0A400F76890 /* LearningAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppApp.swift; sourceTree = "<group>"; };
-		B213158D27EDC0A400F76890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B213158B27EDC0A400F76890 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
+		B213158D27EDC0A400F76890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B213158F27EDC0A500F76890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B213159227EDC0A500F76890 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B213159C27EDC34000F76890 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		B213158A27EDC0A400F76890 /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
-				B213158B27EDC0A400F76890 /* LearningAppApp.swift */,
-				B213158D27EDC0A400F76890 /* ContentView.swift */,
+				B213158B27EDC0A400F76890 /* LearningApp.swift */,
+				B213159927EDC2AA00F76890 /* Views */,
+				B213159A27EDC2B500F76890 /* ViewModels */,
+				B213159B27EDC2CD00F76890 /* Resources */,
 				B213158F27EDC0A500F76890 /* Assets.xcassets */,
 				B213159127EDC0A500F76890 /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				B213159227EDC0A500F76890 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B213159927EDC2AA00F76890 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B213158D27EDC0A400F76890 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B213159A27EDC2B500F76890 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B213159C27EDC34000F76890 /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B213159B27EDC2CD00F76890 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B213158E27EDC0A400F76890 /* ContentView.swift in Sources */,
-				B213158C27EDC0A400F76890 /* LearningAppApp.swift in Sources */,
+				B213158E27EDC0A400F76890 /* HomeView.swift in Sources */,
+				B213158C27EDC0A400F76890 /* LearningApp.swift in Sources */,
+				B213159D27EDC34000F76890 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
