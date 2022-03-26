@@ -12,6 +12,11 @@ class ContentModel: ObservableObject {
     
     @Published var modules = [Module]()
     
+    //Current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
+    
     var styleData: Data?
     
     init(){
@@ -20,7 +25,9 @@ class ContentModel: ObservableObject {
     
     }
     
-
+    
+    //MARK: - Data Method
+    
     func getLocalData(){
     
         //Get a url to the file
@@ -63,6 +70,36 @@ class ContentModel: ObservableObject {
         }
 
     }
+    
+    //MARK: - Module  navigation control methods
+    
+    func beginModule(_ moduleid:Int){
+        
+       //Find the Index for this module id
+        for index in 0..<modules.count {
+
+            if modules[index].id == moduleid {
+                
+                // Found the matching module
+                currentModuleIndex = index
+                break
+            }
+        }
+
+        //Set the current module
+        currentModule = modules[currentModuleIndex]
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
