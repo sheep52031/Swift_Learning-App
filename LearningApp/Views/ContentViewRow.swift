@@ -43,6 +43,7 @@ struct ContentViewRow: View {
                 
                 
             }
+            .accentColor(.black)
             .padding()
         }
             .padding(.bottom,5)
