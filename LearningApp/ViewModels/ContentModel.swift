@@ -20,21 +20,24 @@ class ContentModel: ObservableObject {
     @Published var currentLesson:Lesson?
     var currentLessonIndex = 0
     
-    //Current lesson explanation
-    @Published var lessonDescription = NSAttributedString()
+    //Current question
+    @Published var currentQuestion:Question?
+    @Published var currentQuestionIndex = 0
+    
+    //Current lesson explanation and current question content
+    @Published var codeText = NSAttributedString()
     var styleData: Data?
     
     //Current selected content and test
     @Published var currentContentSelected:Int?
+    @Published var currentTestSelected:Int?
     
-    
-    
+
     init(){
     
         getLocalData()
     
     }
-    
     
     //MARK: - Data Method
     
@@ -95,7 +98,6 @@ class ContentModel: ObservableObject {
                 break
             }
         }
-
         //Set the current module
         currentModule = modules[currentModuleIndex]
     }
@@ -113,7 +115,7 @@ class ContentModel: ObservableObject {
         
         //Set the current lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyling(currentLesson!.explanation)
+        codeText = addStyling(currentLesson!.explanation)
     }
     
     
@@ -128,7 +130,7 @@ class ContentModel: ObservableObject {
             
             //Set the current lesson property
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
-            lessonDescription = addStyling(currentLesson!.explanation)
+            codeText = addStyling(currentLesson!.explanation)
         }
         else{
             //Reset the lesson state
@@ -142,6 +144,24 @@ class ContentModel: ObservableObject {
         return currentLessonIndex + 1 < currentModule!.content.lessons.count
     }
 
+    func beginTest(_ moduleId:Int){
+        
+        //set the current module
+        beginModule(moduleId)
+        
+        //set the current question index
+        currentQuestionIndex = 0
+        
+        //If there are question ,set the current question to the first one
+        if currentModule?.test.questions.count ?? 0 > 0 {
+            
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+             
+             //Set the question content
+            codeText = addStyling(currentQuestion!.content)
+            
+        }
+    }
     
     //MARK: Code Styling
     private func addStyling(_ htmlString: String) -> NSAttributedString{
