@@ -22,6 +22,7 @@
 		B21315B127F16AC000F76890 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21315B027F16AC000F76890 /* Constants.swift */; };
 		B21315B227F1715700F76890 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21315AE27F1679F00F76890 /* AVKit.framework */; };
 		B21315EC27F1B4F900F76890 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21315EB27F1B4F900F76890 /* CodeTextView.swift */; };
+		B26DEEEF27F6C5EE009F5E8D /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DEEEE27F6C5EE009F5E8D /* TestResultView.swift */; };
 		B2F61F1C27F42CFA00F48A6B /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61F1B27F42CFA00F48A6B /* RectangleCard.swift */; };
 		B2F61F1E27F462FE00F48A6B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61F1D27F462FE00F48A6B /* TestView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		B21315AE27F1679F00F76890 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		B21315B027F16AC000F76890 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B21315EB27F1B4F900F76890 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		B26DEEEE27F6C5EE009F5E8D /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		B2F61F1B27F42CFA00F48A6B /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		B2F61F1D27F462FE00F48A6B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				B2F61F1D27F462FE00F48A6B /* TestView.swift */,
 				B21315EB27F1B4F900F76890 /* CodeTextView.swift */,
 				B2F61F1B27F42CFA00F48A6B /* RectangleCard.swift */,
+				B26DEEEE27F6C5EE009F5E8D /* TestResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F61F1E27F462FE00F48A6B /* TestView.swift in Sources */,
+				B26DEEEF27F6C5EE009F5E8D /* TestResultView.swift in Sources */,
 				B213158E27EDC0A400F76890 /* HomeView.swift in Sources */,
 				B21315A627EEF8B300F76890 /* HomeViewRow.swift in Sources */,
 				B21315A827EF0B7600F76890 /* ContentView.swift in Sources */,

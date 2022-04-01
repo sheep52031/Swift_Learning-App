@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import simd
+//import simd
 
 struct TestView: View {
     
@@ -27,7 +27,7 @@ struct TestView: View {
                     
                     //Question
                     CodeTextView()
-                        .padding(.horizontal)
+                        .padding(.horizontal,20)
                     
                     //Answers
                     ScrollView{
@@ -122,7 +122,9 @@ struct TestView: View {
             else{
                 //Test hasn't loaded yet
                 ProgressView()
+                TestResultView(numCorrect: numCorrect)
             }
+        
     }
     
     var buttonText:String {
