@@ -22,7 +22,9 @@ struct HomeView: View {
                     .padding(.leading,20)
                 
                 ScrollView{
+                    
                     LazyVStack{
+                        
                         ForEach(model.modules){ module in
                             
                             VStack(spacing: 20){
@@ -47,10 +49,11 @@ struct HomeView: View {
                                     HomeViewRow(image: module.test.image,title: " \(module.category) Test", description: "\(module.test.description)", count: "\(module.test.questions.count) Questionss", time: module.test.time)
                                     }
                         }
+                            .padding(.bottom,10)
+                        }
                     }
                     .accentColor(.black)
                     .padding()
-                }
                 }
             }
             .navigationTitle("Get Stared")
