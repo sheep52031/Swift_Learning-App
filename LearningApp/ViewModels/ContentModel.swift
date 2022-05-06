@@ -89,7 +89,7 @@ class ContentModel: ObservableObject {
     func getRemoteData(){
         
         //String path
-        let urlString = "https://sheep52031.github.io/learningapp-data/data2.json"
+        let urlString = "https://sheep52031.github.io/Swift_Learning-App/data2.json"
         
         //Create a url object
         let url = URL(string: urlString)
